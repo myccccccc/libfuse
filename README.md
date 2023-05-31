@@ -1,3 +1,12 @@
+Use [Bear](https://github.com/rizsotto/Bear) to generate `compile_commands.json` by running
+```shell
+mkdir build && cd build
+meson setup ..
+bear -- ninja
+mv compile_commands.json ..
+```
+
+
 libfuse
 =======
 
