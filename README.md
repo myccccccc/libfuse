@@ -1,11 +1,6 @@
-Use [Bear](https://github.com/rizsotto/Bear) to generate `compile_commands.json` by running
-```shell
-mkdir build && cd build
-meson setup ..
-bear -- ninja
-mv compile_commands.json ..
-```
-
+While building libfuse, [Meson](https://mesonbuild.com/) will automatically generate `compile_command.json` in the `build` directory.
+You need to follow the [instructions](https://www.jetbrains.com/help/clion/managing-meson-projects.html) to let Clion configure libfuse project
+by using the `build/compile_command.json`.
 
 libfuse
 =======
